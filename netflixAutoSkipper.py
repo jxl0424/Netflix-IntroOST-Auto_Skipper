@@ -3,8 +3,10 @@ import cv2
 import pyautogui as pag
 import time
 
+#NEEDS to have an realtime update from Comptuer screen! use pyautogui.screenshot()
 img_path = r'C:\Users\brend\OneDrive - Middlesex University\Documents\GitHub\Netflix-IntroOST-Auto_Skipper\netflix_ss.png'
 template_path = r'C:\Users\brend\OneDrive - Middlesex University\Documents\GitHub\Netflix-IntroOST-Auto_Skipper\skipIntroButton.png'
+
 img = cv2.imread(img_path, 0)
 template = cv2.imread(template_path, 0)
 height, width = template.shape
@@ -23,9 +25,6 @@ for method in methods:
     bottom_right = (location[0] + width, location[1] + height)
     
     cv2.rectangle(img2, location, bottom_right, 0, 5)
-    # cv2.imshow("Method", img2)
-    # cv2.waitKey(0)
-    # cv2.destroyAllWindows()
 
 time.sleep(2)
 x, y = location
