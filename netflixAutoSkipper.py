@@ -9,7 +9,7 @@ while True:
 # Get a screenshot of the screen
     img = pyautogui.screenshot()
     img = np.asarray(img.convert(mode = 'L'))
-    path_intro_template = r'C:\Users\brend\OneDrive - Middlesex University\Documents\GitHub\Netflix-IntroOST-Auto_Skipper\skipIntro1.png'
+    path_intro_template = r'C:\Users\brend\OneDrive - Middlesex University\Documents\GitHub\Netflix-IntroOST-Auto_Skipper\skipIntro.png'
     path_recap_template = r'C:\Users\brend\OneDrive - Middlesex University\Documents\GitHub\Netflix-IntroOST-Auto_Skipper\skipRecap.png'
     path_next_episode_template = r'C:\Users\brend\OneDrive - Middlesex University\Documents\GitHub\Netflix-IntroOST-Auto_Skipper\nextEpisode.png'
     intro_template = cv2.imread(path_intro_template, 0)
